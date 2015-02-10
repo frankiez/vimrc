@@ -24,6 +24,7 @@ let g:molokai_original=1
 let g:rehash256=1
 set guifont=DejaVu\ Sans\ mono\ 11
 set guifontwide=STHeiti\ 14
+
 "自动插件安装
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -38,11 +39,13 @@ Bundle 'asins/vim-dict'
 "在vim启动时调用NERDTree
 autocmd VimEnter * NERDTree
 
+"用字典代码自动补全
 autocmd filetype css set dictionary+=$HOME/.vim/bundle/vim-dict/dict/css.dic
 autocmd filetype javascript set dictionary+=$HOME/.vim/bundle/vim-dict/dict/javascript.dic
 autocmd filetype php set dictionary+=$HOME/.vim/bundle/vim-dict/dict/php.dic
 autocmd filetype html set dictionary+=$HOME/.vim/bundle/vim-dict/dict/html5.dic
 
+"热键F2展开/隐藏
 map <F2> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
