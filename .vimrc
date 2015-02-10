@@ -22,10 +22,6 @@ set ambiwidth=double
 colorscheme molokai
 let g:molokai_original=1
 let g:rehash256=1
-if has("linux")
-  "Ubuntu 14.04下GVIM的字体间距过宽
-  set gfn=Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
-endif
 set guifont=DejaVu\ Sans\ mono\ 11
 set guifontwide=STHeiti\ 14
 "自动插件安装
